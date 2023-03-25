@@ -1,0 +1,31 @@
+databases
+
+1. genome-scores
+2. genome-tags
+3. links
+4. movies
+5. ratings
+6. tags
+
+considerations:
+movies have at least 1 tag or 1 rating
+
+tables columns:
+
+ratings:
+user_id (number), movie_id (number), rating (float), timestamp (number)
+
+tags:
+user_id (number), movie_id (number), tag (varchar2), timestamp (number)
+
+movies:
+movie_id (number), title (varchar2), genres (varchar2)
+
+links:
+movie_id(number), imdb_id (number), tmdb_id (number)
+
+genome_tags:
+tag_id (number), tag (varchar2)
+
+genome_scores:
+movie_id (number), tag_id (number), relevance (float)
