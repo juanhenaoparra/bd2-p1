@@ -1,0 +1,5 @@
+SET DEFINE OFF
+CREATE TABLE TAGS ( user_id NUMBER(38),
+movie_id NUMBER(38),
+tag VARCHAR2(128),
+timestamp NUMBER(38));

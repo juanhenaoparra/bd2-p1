@@ -1,0 +1,4 @@
+SET DEFINE OFF
+CREATE TABLE GENOME_SCORES ( movie_id NUMBER(38),
+tag_id NUMBER(38),
+relevance FLOAT);

@@ -1,0 +1,5 @@
+SET DEFINE OFF
+CREATE TABLE LINKS ( movie_id NUMBER(38),
+imdb_id NUMBER(38),
+tmdb_id NUMBER(38));
+

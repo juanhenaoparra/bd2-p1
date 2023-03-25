@@ -1,0 +1,5 @@
+SET DEFINE OFF
+CREATE TABLE RATINGS ( user_id NUMBER(38),
+movie_id NUMBER(38),
+rating FLOAT,
+timestamp NUMBER(38));
