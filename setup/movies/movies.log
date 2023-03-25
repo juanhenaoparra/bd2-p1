@@ -1,0 +1,57 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Sat Mar 25 21:00:55 2023
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   movies.ctl
+Data File:      /opt/oracle/movies/ml-25m/movies.csv
+  File processing option string: "str '
+'"
+  Bad File:     /opt/oracle/movies/setup/movies/movies.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table MOVIES, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+MOVIE_ID                            FIRST     *   ,  O(") CHARACTER            
+                                                      O(")
+TITLE                                NEXT  4000   ,  O(") CHARACTER            
+                                                      O(")
+GENRES                               NEXT  4000   ,  O(") CHARACTER            
+                                                      O(")
+
+value used for ROWS parameter changed from 250 to 126
+
+Table MOVIES:
+  62423 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1041012 bytes(126 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:         62423
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sat Mar 25 21:00:55 2023
+Run ended on Sat Mar 25 21:00:56 2023
+
+Elapsed time was:     00:00:00.39
+CPU time was:         00:00:00.08

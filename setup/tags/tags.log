@@ -1,0 +1,214 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Sat Mar 25 21:03:06 2023
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   tags.ctl
+Data File:      /opt/oracle/movies/ml-25m/tags.csv
+  File processing option string: "str '
+'"
+  Bad File:     /opt/oracle/movies/setup/tags/tags.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TAGS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+USER_ID                             FIRST     *   ,  O(") CHARACTER            
+                                                      O(")
+MOVIE_ID                             NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+TAG                                  NEXT  4000   ,  O(") CHARACTER            
+                                                      O(")
+TIMESTAMP                            NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+
+value used for ROWS parameter changed from 250 to 219
+Record 24880: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 197, maximum: 128)
+
+Record 240994: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 136, maximum: 128)
+
+Record 254919: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 135, maximum: 128)
+
+Record 281940: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 149, maximum: 128)
+
+Record 342716: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 136, maximum: 128)
+
+Record 347661: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 129, maximum: 128)
+
+Record 347665: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 136, maximum: 128)
+
+Record 351571: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 197, maximum: 128)
+
+Record 567147: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 173, maximum: 128)
+
+Record 618880: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 170, maximum: 128)
+
+Record 700027: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 197, maximum: 128)
+
+Record 725774: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 133, maximum: 128)
+
+Record 727903: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 155, maximum: 128)
+
+Record 791365: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 197, maximum: 128)
+
+Record 791366: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 159, maximum: 128)
+
+Record 891061: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 136, maximum: 128)
+
+Record 891064: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 190, maximum: 128)
+
+Record 891065: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 212, maximum: 128)
+
+Record 891066: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 224, maximum: 128)
+
+Record 891077: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 131, maximum: 128)
+
+Record 891082: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 145, maximum: 128)
+
+Record 891088: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 147, maximum: 128)
+
+Record 891090: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 160, maximum: 128)
+
+Record 891095: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 229, maximum: 128)
+
+Record 891099: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 145, maximum: 128)
+
+Record 891105: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 136, maximum: 128)
+
+Record 891106: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 133, maximum: 128)
+
+Record 891107: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 211, maximum: 128)
+
+Record 891108: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 213, maximum: 128)
+
+Record 891110: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 130, maximum: 128)
+
+Record 891114: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 172, maximum: 128)
+
+Record 891119: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 182, maximum: 128)
+
+Record 891123: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 219, maximum: 128)
+
+Record 891125: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 201, maximum: 128)
+
+Record 891129: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 188, maximum: 128)
+
+Record 891130: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 178, maximum: 128)
+
+Record 891131: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 182, maximum: 128)
+
+Record 891137: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 155, maximum: 128)
+
+Record 891138: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 133, maximum: 128)
+
+Record 891139: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 190, maximum: 128)
+
+Record 891143: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 134, maximum: 128)
+
+Record 891146: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 238, maximum: 128)
+
+Record 891148: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 150, maximum: 128)
+
+Record 891149: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 159, maximum: 128)
+
+Record 891153: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 197, maximum: 128)
+
+Record 891155: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 223, maximum: 128)
+
+Record 891156: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 133, maximum: 128)
+
+Record 891157: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 220, maximum: 128)
+
+Record 891158: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 186, maximum: 128)
+
+Record 891165: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 244, maximum: 128)
+
+Record 891170: Rejected - Error on table TAGS, column TAG.
+ORA-12899: value too large for column "NIJU"."TAGS"."TAG" (actual: 215, maximum: 128)
+
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table TAGS:
+  891119 Rows successfully loaded.
+  51 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1045944 bytes(219 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:        891228
+Total logical records rejected:        51
+Total logical records discarded:        0
+
+Run began on Sat Mar 25 21:03:06 2023
+Run ended on Sat Mar 25 21:03:25 2023
+
+Elapsed time was:     00:00:18.44
+CPU time was:         00:00:01.21

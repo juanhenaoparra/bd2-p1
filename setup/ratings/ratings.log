@@ -1,0 +1,58 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Sat Mar 25 21:01:07 2023
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ratings.ctl
+Data File:      /opt/oracle/movies/ml-25m/ratings.csv
+  File processing option string: "str '
+'"
+  Bad File:     /opt/oracle/movies/setup/ratings/ratings.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table RATINGS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+USER_ID                             FIRST     *   ,  O(") CHARACTER            
+                                                      O(")
+MOVIE_ID                             NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+RATING                               NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+TIMESTAMP                            NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+
+
+Table RATINGS:
+  25000095 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 258000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:      25000095
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sat Mar 25 21:01:07 2023
+Run ended on Sat Mar 25 21:02:48 2023
+
+Elapsed time was:     00:01:40.12
+CPU time was:         00:00:17.57
