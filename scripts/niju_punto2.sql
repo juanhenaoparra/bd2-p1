@@ -8,16 +8,6 @@ Nicolás Jiménez Ospina
 
 SET SERVEROUTPUT ON;
 
-SELECT MOVIES.MOVIE_ID, MOVIES.TITLE, RATINGS.RATING, RATINGS.DATETIME  FROM MOVIES
-                INNER JOIN RATINGS
-                ON MOVIES.MOVIE_ID = RATINGS.MOVIE_ID
-                WHERE DATETIME > TO_TIMESTAMP('2018-07-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS') AND
-                DATETIME < TO_TIMESTAMP('2019-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS')
-                ORDER BY RATINGS.RATING ASC;
-                
-SELECT TO_TIMESTAMP('2023-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS') FROM DUAL; -- SEM 1
-SELECT TO_TIMESTAMP('2023-07-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS') FROM DUAL; -- SEM 2
-
 -- Type RANKING to contain the structure of the output and the counter of each range of RANKINGS
 CREATE OR REPLACE TYPE RANKING AS OBJECT (
     TITLE       VARCHAR2(512),
@@ -32,7 +22,7 @@ CREATE OR REPLACE TYPE RANKING AS OBJECT (
 -- Array of RANKING type
 CREATE OR REPLACE TYPE ALL_RANKINGS AS TABLE OF RANKING; -- []RANKING
 
--- Procedure to search and increment a title and tag row in the desired column LT3 (Lower than rating 3) or GTE3 (Greather or equal than rating 3)
+-- Procedure to search and increment a title in the accumulated ranking
 CREATE OR REPLACE PROCEDURE NIJU_PUNTO2_INCREMENT(
 VALL            IN OUT ALL_RANKINGS,
 SEARCH_TITLE    IN VARCHAR2,
@@ -52,7 +42,7 @@ BEGIN
     FROM TABLE(VALL) 
     WHERE TITLE=SEARCH_TITLE;
     
-    -- If there are no matches insert an empty row of title and tag
+    -- If there are no matches insert an empty row of RANKING type
     IF TOTAL_COUNT <= 0 THEN
         VALL.EXTEND;
         VALL(VALL.LAST) := RANKING(SEARCH_TITLE, SEARCH_YEAR, SEARCH_SEMESTER, SEARCH_HOUR_A, SEARCH_HOUR_B, 0, 0.0);
@@ -68,6 +58,9 @@ BEGIN
 
 END NIJU_PUNTO2_INCREMENT;
 
+-- Procedure to create a SELECT statement to fetch only the rows inside a semester 
+-- and the increment based on the hours received
+-- and show the output
 CREATE OR REPLACE PROCEDURE NIJU_PUNTO2 (
 I_YEAR IN NUMBER,
 I_SEMESTER IN NUMBER,
